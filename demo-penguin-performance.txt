@@ -1,0 +1,783 @@
+*-*-*-*-*-*-*-*-*-*-*-* RUNNING STEP 6 *-*-*-*-*-*-*-*-*-*-*-*
+**************************************************
+(A) Model: (A) Base-DT
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[4 0 0]
+ [0 1 2]
+ [0 1 5]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       1.00      1.00      1.00         4
+   Chinstrap       0.50      0.33      0.40         3
+      Gentoo       0.71      0.83      0.77         6
+
+    accuracy                           0.77        13
+   macro avg       0.74      0.72      0.72        13
+weighted avg       0.75      0.77      0.76        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.77
+Macro-average F1: 0.72
+Weighted-average F1: 0.76
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (B) TOP-DT
+
+Parameters:
+criterion: ['gini', 'entropy']
+max_depth: [3, 5, None]
+min_samples_split: [2, 5, 10]
+
+Best Parameters:
+criterion: gini
+max_depth: 3
+min_samples_split: 2
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[4 0 0]
+ [0 1 2]
+ [0 1 5]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       1.00      1.00      1.00         4
+   Chinstrap       0.50      0.33      0.40         3
+      Gentoo       0.71      0.83      0.77         6
+
+    accuracy                           0.77        13
+   macro avg       0.74      0.72      0.72        13
+weighted avg       0.75      0.77      0.76        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.77
+Macro-average F1: 0.72
+Weighted-average F1: 0.76
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (C) Base-MLP
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[0 0 4]
+ [0 0 3]
+ [0 0 6]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       0.00      0.00      0.00         4
+   Chinstrap       0.00      0.00      0.00         3
+      Gentoo       0.46      1.00      0.63         6
+
+    accuracy                           0.46        13
+   macro avg       0.15      0.33      0.21        13
+weighted avg       0.21      0.46      0.29        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.46
+Macro-average F1: 0.21
+Weighted-average F1: 0.29
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (D) TOP-MLP
+
+Parameters:
+activation: ['logistic', 'tanh', 'relu']
+hidden_layer_sizes: [(30, 50), (10, 10, 10)]
+solver: ['adam', 'sgd']
+
+Best Parameters:
+activation: logistic
+hidden_layer_sizes: (30, 50)
+solver: adam
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[0 0 4]
+ [0 0 3]
+ [0 0 6]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       0.00      0.00      0.00         4
+   Chinstrap       0.00      0.00      0.00         3
+      Gentoo       0.46      1.00      0.63         6
+
+    accuracy                           0.46        13
+   macro avg       0.15      0.33      0.21        13
+weighted avg       0.21      0.46      0.29        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.46
+Macro-average F1: 0.21
+Weighted-average F1: 0.29
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (A) Base-DT
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[4 0 0]
+ [0 1 2]
+ [0 1 5]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       1.00      1.00      1.00         4
+   Chinstrap       0.50      0.33      0.40         3
+      Gentoo       0.71      0.83      0.77         6
+
+    accuracy                           0.77        13
+   macro avg       0.74      0.72      0.72        13
+weighted avg       0.75      0.77      0.76        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.77
+Macro-average F1: 0.72
+Weighted-average F1: 0.76
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (B) TOP-DT
+
+Parameters:
+criterion: ['gini', 'entropy']
+max_depth: [3, 5, None]
+min_samples_split: [2, 5, 10]
+
+Best Parameters:
+criterion: entropy
+max_depth: 5
+min_samples_split: 5
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[4 0 0]
+ [0 1 2]
+ [0 1 5]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       1.00      1.00      1.00         4
+   Chinstrap       0.50      0.33      0.40         3
+      Gentoo       0.71      0.83      0.77         6
+
+    accuracy                           0.77        13
+   macro avg       0.74      0.72      0.72        13
+weighted avg       0.75      0.77      0.76        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.77
+Macro-average F1: 0.72
+Weighted-average F1: 0.76
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (C) Base-MLP
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[0 0 4]
+ [0 0 3]
+ [0 0 6]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       0.00      0.00      0.00         4
+   Chinstrap       0.00      0.00      0.00         3
+      Gentoo       0.46      1.00      0.63         6
+
+    accuracy                           0.46        13
+   macro avg       0.15      0.33      0.21        13
+weighted avg       0.21      0.46      0.29        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.46
+Macro-average F1: 0.21
+Weighted-average F1: 0.29
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (D) TOP-MLP
+
+Parameters:
+activation: ['logistic', 'tanh', 'relu']
+hidden_layer_sizes: [(30, 50), (10, 10, 10)]
+solver: ['adam', 'sgd']
+
+Best Parameters:
+activation: logistic
+hidden_layer_sizes: (30, 50)
+solver: adam
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[4 0 0]
+ [2 0 1]
+ [1 0 5]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       0.57      1.00      0.73         4
+   Chinstrap       0.00      0.00      0.00         3
+      Gentoo       0.83      0.83      0.83         6
+
+    accuracy                           0.69        13
+   macro avg       0.47      0.61      0.52        13
+weighted avg       0.56      0.69      0.61        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.69
+Macro-average F1: 0.52
+Weighted-average F1: 0.61
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (A) Base-DT
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[4 0 0]
+ [0 1 2]
+ [0 1 5]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       1.00      1.00      1.00         4
+   Chinstrap       0.50      0.33      0.40         3
+      Gentoo       0.71      0.83      0.77         6
+
+    accuracy                           0.77        13
+   macro avg       0.74      0.72      0.72        13
+weighted avg       0.75      0.77      0.76        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.77
+Macro-average F1: 0.72
+Weighted-average F1: 0.76
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (B) TOP-DT
+
+Parameters:
+criterion: ['gini', 'entropy']
+max_depth: [3, 5, None]
+min_samples_split: [2, 5, 10]
+
+Best Parameters:
+criterion: entropy
+max_depth: 3
+min_samples_split: 5
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[4 0 0]
+ [0 1 2]
+ [0 1 5]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       1.00      1.00      1.00         4
+   Chinstrap       0.50      0.33      0.40         3
+      Gentoo       0.71      0.83      0.77         6
+
+    accuracy                           0.77        13
+   macro avg       0.74      0.72      0.72        13
+weighted avg       0.75      0.77      0.76        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.77
+Macro-average F1: 0.72
+Weighted-average F1: 0.76
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (C) Base-MLP
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[0 0 4]
+ [0 0 3]
+ [0 0 6]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       0.00      0.00      0.00         4
+   Chinstrap       0.00      0.00      0.00         3
+      Gentoo       0.46      1.00      0.63         6
+
+    accuracy                           0.46        13
+   macro avg       0.15      0.33      0.21        13
+weighted avg       0.21      0.46      0.29        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.46
+Macro-average F1: 0.21
+Weighted-average F1: 0.29
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (D) TOP-MLP
+
+Parameters:
+activation: ['logistic', 'tanh', 'relu']
+hidden_layer_sizes: [(30, 50), (10, 10, 10)]
+solver: ['adam', 'sgd']
+
+Best Parameters:
+activation: tanh
+hidden_layer_sizes: (10, 10, 10)
+solver: adam
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[0 0 4]
+ [0 0 3]
+ [0 0 6]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       0.00      0.00      0.00         4
+   Chinstrap       0.00      0.00      0.00         3
+      Gentoo       0.46      1.00      0.63         6
+
+    accuracy                           0.46        13
+   macro avg       0.15      0.33      0.21        13
+weighted avg       0.21      0.46      0.29        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.46
+Macro-average F1: 0.21
+Weighted-average F1: 0.29
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (A) Base-DT
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[4 0 0]
+ [0 1 2]
+ [0 1 5]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       1.00      1.00      1.00         4
+   Chinstrap       0.50      0.33      0.40         3
+      Gentoo       0.71      0.83      0.77         6
+
+    accuracy                           0.77        13
+   macro avg       0.74      0.72      0.72        13
+weighted avg       0.75      0.77      0.76        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.77
+Macro-average F1: 0.72
+Weighted-average F1: 0.76
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (B) TOP-DT
+
+Parameters:
+criterion: ['gini', 'entropy']
+max_depth: [3, 5, None]
+min_samples_split: [2, 5, 10]
+
+Best Parameters:
+criterion: gini
+max_depth: 5
+min_samples_split: 5
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[4 0 0]
+ [0 1 2]
+ [0 1 5]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       1.00      1.00      1.00         4
+   Chinstrap       0.50      0.33      0.40         3
+      Gentoo       0.71      0.83      0.77         6
+
+    accuracy                           0.77        13
+   macro avg       0.74      0.72      0.72        13
+weighted avg       0.75      0.77      0.76        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.77
+Macro-average F1: 0.72
+Weighted-average F1: 0.76
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (C) Base-MLP
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[0 0 4]
+ [0 0 3]
+ [0 0 6]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       0.00      0.00      0.00         4
+   Chinstrap       0.00      0.00      0.00         3
+      Gentoo       0.46      1.00      0.63         6
+
+    accuracy                           0.46        13
+   macro avg       0.15      0.33      0.21        13
+weighted avg       0.21      0.46      0.29        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.46
+Macro-average F1: 0.21
+Weighted-average F1: 0.29
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (D) TOP-MLP
+
+Parameters:
+activation: ['logistic', 'tanh', 'relu']
+hidden_layer_sizes: [(30, 50), (10, 10, 10)]
+solver: ['adam', 'sgd']
+
+Best Parameters:
+activation: logistic
+hidden_layer_sizes: (30, 50)
+solver: adam
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[0 0 4]
+ [0 0 3]
+ [0 0 6]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       0.00      0.00      0.00         4
+   Chinstrap       0.00      0.00      0.00         3
+      Gentoo       0.46      1.00      0.63         6
+
+    accuracy                           0.46        13
+   macro avg       0.15      0.33      0.21        13
+weighted avg       0.21      0.46      0.29        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.46
+Macro-average F1: 0.21
+Weighted-average F1: 0.29
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (A) Base-DT
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[4 0 0]
+ [0 1 2]
+ [0 1 5]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       1.00      1.00      1.00         4
+   Chinstrap       0.50      0.33      0.40         3
+      Gentoo       0.71      0.83      0.77         6
+
+    accuracy                           0.77        13
+   macro avg       0.74      0.72      0.72        13
+weighted avg       0.75      0.77      0.76        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.77
+Macro-average F1: 0.72
+Weighted-average F1: 0.76
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (B) TOP-DT
+
+Parameters:
+criterion: ['gini', 'entropy']
+max_depth: [3, 5, None]
+min_samples_split: [2, 5, 10]
+
+Best Parameters:
+criterion: gini
+max_depth: None
+min_samples_split: 2
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[4 0 0]
+ [0 1 2]
+ [0 1 5]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       1.00      1.00      1.00         4
+   Chinstrap       0.50      0.33      0.40         3
+      Gentoo       0.71      0.83      0.77         6
+
+    accuracy                           0.77        13
+   macro avg       0.74      0.72      0.72        13
+weighted avg       0.75      0.77      0.76        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.77
+Macro-average F1: 0.72
+Weighted-average F1: 0.76
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (C) Base-MLP
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[0 0 4]
+ [0 0 3]
+ [0 0 6]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       0.00      0.00      0.00         4
+   Chinstrap       0.00      0.00      0.00         3
+      Gentoo       0.46      1.00      0.63         6
+
+    accuracy                           0.46        13
+   macro avg       0.15      0.33      0.21        13
+weighted avg       0.21      0.46      0.29        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.46
+Macro-average F1: 0.21
+Weighted-average F1: 0.29
+
+--------------------------------------------------
+
+**************************************************
+(A) Model: (D) TOP-MLP
+
+Parameters:
+activation: ['logistic', 'tanh', 'relu']
+hidden_layer_sizes: [(30, 50), (10, 10, 10)]
+solver: ['adam', 'sgd']
+
+Best Parameters:
+activation: tanh
+hidden_layer_sizes: (30, 50)
+solver: adam
+
+--------------------------------------------------
+
+(B) Confusion Matrix:
+[[0 0 4]
+ [0 0 3]
+ [0 0 6]]
+
+--------------------------------------------------
+
+(C) Classification Report:
+              precision    recall  f1-score   support
+
+      Adelie       0.00      0.00      0.00         4
+   Chinstrap       0.00      0.00      0.00         3
+      Gentoo       0.46      1.00      0.63         6
+
+    accuracy                           0.46        13
+   macro avg       0.15      0.33      0.21        13
+weighted avg       0.21      0.46      0.29        13
+
+
+--------------------------------------------------
+
+(D) Accuracy: 0.46
+Macro-average F1: 0.21
+Weighted-average F1: 0.29
+
+--------------------------------------------------
+
+--------------------------------------------------
+The 5 runs for Base DT resulted in
+accuracy: [0.77, 0.77, 0.77, 0.77, 0.77]
+f1_macro: [0.72, 0.72, 0.72, 0.72, 0.72]
+f1_weighted [0.76, 0.76, 0.76, 0.76, 0.76]
+
+Average Accuracy (Base DT): 0.77, Variance: 0.00e+00
+Average Macro F1 (Base DT): 0.72, Variance: 0.00e+00
+Average Weighted F1 (Base DT): 0.76, Variance: 0.00e+00
+
+--------------------------------------------------
+The 5 runs for Top DT resulted in
+accuracy: [0.77, 0.77, 0.77, 0.77, 0.77]
+f1_macro: [0.72, 0.72, 0.72, 0.72, 0.72]
+f1_weighted [0.76, 0.76, 0.76, 0.76, 0.76]
+
+Average Accuracy (Top DT): 0.77, Variance: 0.00e+00
+Average Macro F1 (Top DT): 0.72, Variance: 0.00e+00
+Average Weighted F1 (Top DT): 0.76, Variance: 0.00e+00
+
+--------------------------------------------------
+
+The 5 runs for Base MLP resulted in
+accuracy: [0.46, 0.46, 0.46, 0.46, 0.46]
+f1_macro: [0.21, 0.21, 0.21, 0.21, 0.21]
+f1_weighted [0.29, 0.29, 0.29, 0.29, 0.29]
+
+Average Accuracy (Base MLP): 0.46, Variance: 0.00e+00
+Average Macro F1 (Base MLP): 0.21, Variance: 0.00e+00
+Average Weighted F1 (Base MLP): 0.29, Variance: 0.00e+00
+
+--------------------------------------------------
+
+The 5 runs for Top MLP resulted in
+accuracy: [0.46, 0.69, 0.46, 0.46, 0.46]
+f1_macro: [0.21, 0.52, 0.21, 0.21, 0.21]
+f1_weighted [0.29, 0.61, 0.29, 0.29, 0.29]
+
+Average Accuracy (Base MLP): 0.51, Variance: 8.52e-03
+Average Macro F1 (Base MLP): 0.51, Variance: 8.52e-03
+Average Weighted F1 (Base MLP): 0.51, Variance: 8.52e-03
+
